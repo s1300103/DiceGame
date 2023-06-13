@@ -1,13 +1,23 @@
 import java.util.Random;
+import java.util.Scanner;
 
 class DiceGame {
 
     public static void main(String[] args) {
 
         int data,total=0;
+	String name;
         int[] dice = {1, 2, 3, 4, 5, 6};
         Random r = new Random();
 
+	System.out.println("What is your name?");
+	System.out.print(">");
+
+	Scanner sc = new Scanner(System.in);
+
+	name = sc.next();
+
+	System.out.println("Hello, " + name + "!");
 
         System.out.println("Rolling dice...");
 
